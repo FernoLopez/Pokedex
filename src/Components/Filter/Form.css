@@ -1,0 +1,23 @@
+.input-position {
+    padding: var(--padding-mobile);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.text_input {
+    font-family:monospace;
+}
+
+.text_form {
+    font-family:monospace;
+}
+
+@media screen and (min-width: 720px) {
+
+.input-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

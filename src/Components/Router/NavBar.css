@@ -1,0 +1,105 @@
+.header {
+    padding: var(--padding-mobile);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .header__title {
+    color: var(--secondary-color);
+  }
+  .header__menuham{
+    font-size: 1.4rem;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+  
+  .navbar{
+    width: min(100%, 300px);
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    padding-top: 80px;
+    box-shadow: 0 0 20px 0 #0009;
+    transition: transform 600ms ease;
+    transform: translateX(105%);
+    background-image: url(../Assets/pokedex_phone_wallpaper_by_drboxhead_dcrrow9-fullview.jpg);
+    background-size: 130%;
+  }
+  .navbar-open {
+    transition: transform 600ms ease;
+    transform: translateX(0);
+  }
+  .navbar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 150px;
+  }
+  .navbar__links {
+    display: flex;
+    flex-direction: column;
+    height: 55px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .navbar__link-active {
+    color: var(--secondary-color);
+  }
+  .navbar__links i {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: 720px) {
+    .header {
+      padding: 0 0 0 var(--padding-tablet);
+      height: -20%;
+    }
+    .header__menuham {
+      display: none;
+    }
+    .navbar-open {
+      transform: translateX(0);
+      transition-duration: 0ms;
+    }
+    .navbar {
+      transform: translateX(0);
+      transition-duration: 0ms;
+      position: static;
+      width: auto;
+      height: auto;
+      padding: initial;
+      box-shadow: none;
+      width: min(50%, 800px);
+      background-color: transparent;
+      background-image: none;
+    }
+
+    .navbar p {
+      color: var(--secondary-color);
+    }
+
+    .navbar__list {
+      flex-direction: initial;
+      justify-content: space-evenly;
+      gap: 0;
+      margin-top: -25%;
+    }
+    .navbar__items {
+      padding: 0;
+      height: 100px;
+      display: flex;
+      align-items: center;
+    }
+    .navbar__links{
+      padding: 0 30px;
+    }
+  }

@@ -1,0 +1,82 @@
+/* .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+    .pagination-container {
+      padding: var(--padding-mobile);
+      display: flex;
+      justify-content: center;
+      /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+      gap: 10px;
+      }
+
+      .pagination_number {
+          display:inline-flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 40px;
+          height: 40px;
+          transition: background-color .2s;
+          border: 1px solid #ddd;
+          cursor: pointer;
+          font-family:monospace;
+        }
+        
+        .pagination_number:hover:not(.active) {background-color: cornflowerblue}
+
+        .pagination_number {
+        transition: background-color .3s;
+        } 
+      
+        .prev {
+          display:inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          transition: background-color .2s;
+          border: 1px solid #ddd;
+          cursor: pointer;
+          font-family:monospace;
+        }
+
+        .next {
+          display:inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          transition: background-color .2s;
+          border: 1px solid #ddd;
+          cursor: pointer;
+          font-family:monospace;
+        }
+
+      .pagination_number {
+        background: linear-gradient(rgba(250, 233, 0, 0.89),transparent);
+        border: 2px solid white;
+        padding: 10px 15px;
+        border-radius: 50%;
+        
+        position: relative;
+        margin: 0 5px;
+        cursor: pointer;
+        flex-wrap: wrap;
+        gap: 10%
+      }
+      
+      .pagination_number span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .pagination_number.active {
+        border: 1px solid yellow;
+        color: #888;
+        pointer-events: none;
+      }

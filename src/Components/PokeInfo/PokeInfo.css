@@ -1,0 +1,108 @@
+.body_info {
+    background-image: url(../Assets/5818315.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 110vh;
+}
+
+.pokeinfo_container {
+    padding: var(--padding-mobile);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+ .item-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+} 
+
+.info_title {
+    padding-left: 4%;
+}
+
+.pkm_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.info_poke {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: yellow;
+    font-family:monospace;
+    padding-top: 6%;
+}
+
+.info_character {
+    display: grid;
+    justify-items:stretch;
+    gap: 0;
+    padding-right: 5%;
+}
+
+/* #limheight {
+     height: 300px;  
+    -webkit-column-count: 7;
+       -moz-column-count: 7;
+            column-count: 7; 
+  } */
+  
+  /* #limheight li {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--secondary-color);
+  } */
+
+  .moves_info {
+    display: grid;
+    justify-items:center;
+    align-items: center;
+    grid-template-columns: 125px 125px 125px;
+    color: var(--secondary-color);
+    font-family:monospace;
+    margin-top: -4%;
+  }
+
+  @media screen and (min-width: 720px) {
+    .body_info {
+        height: 170vh;
+    }
+
+    .info_title {
+        font-size: 4rem;
+    }
+
+    .info_character {
+        font-size: 3rem;
+    }
+
+    .moves_info {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 200px 200px 200px 200px 200px 200px;
+        font-size: 1.5rem;
+        padding-top: 7%;
+        margin-left: 5%;
+    }
+    
+    #limheight {
+         height: 300px;  
+        -webkit-column-count: 7;
+           -moz-column-count: 7;
+                column-count: 7; 
+      }
+      
+      #limheight li {
+        display: inline-block;
+      }
+  }
